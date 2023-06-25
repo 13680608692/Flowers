@@ -326,17 +326,17 @@ def train(epochs, is_transfer):
 
 if __name__ == '__main__':
     # 创建mobile模型
-    # train(epochs=20, is_transfer=0)
+    train(epochs=20, is_transfer=0)
     # 创建cnn卷积模型
-    # train(epochs=20, is_transfer=1)
+    train(epochs=20, is_transfer=1)
     # 创建restnet模型
     train(epochs=20, is_transfer=2)
 
 
     # 评估mobile模型
-    # evaluate(20, 0)
+    evaluate(20, 0)
     # 评估cnn模型
-    # evaluate(20, 1)
+    evaluate(20, 1)
     # 评估restnet模型
-    # evaluate(20, 2)
+    evaluate(20, 2)
 
